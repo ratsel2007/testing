@@ -13,7 +13,7 @@ class Store {
         name: '',
         base: '',
         score: 0,
-        count: 0,
+        count: 1,
         date: '',
     }
 

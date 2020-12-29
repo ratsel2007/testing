@@ -7,7 +7,7 @@ import { app, BrowserWindow, Menu, ipcMain } from 'electron'
 ipcMain.on('asynchronous-message', (event, arg) => {
   const user = JSON.parse(JSON.stringify(arg))
   appendFile(
-      `c:/res.json`,
+      `c:/res.doc`,
       `${user.date} ${user.name} сдавал блок ${user.base}, количество правильных ответов: ${user.score} \n`,
       'utf8',
       (error) => {
@@ -40,7 +40,7 @@ const createWindow = () => {
   // and load the index.html of the app.
   win.loadFile('renderer/index.html')
 
-  // win.webContents.openDevTools()
+  win.webContents.openDevTools()
 
   // send data to renderer process
   win.webContents.on('did-finish-load', () => {

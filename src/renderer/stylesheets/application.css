@@ -78,6 +78,15 @@ p {
   text-align: center;
 }
 
+.question_title {
+  font-weight: bold;
+}
+
+.question_title-under {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .question_answer {
   margin: 10px 0px;
   padding: 10px 0;
@@ -86,6 +95,10 @@ p {
 
 .red {
   background-color: darkgrey;
+}
+
+.redtext {
+  color: red;
 }
 
 .finish {

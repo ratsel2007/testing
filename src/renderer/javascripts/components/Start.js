@@ -58,6 +58,7 @@ export const Start = observer(({start}) => {
                 </div>
                 <button
                     className='button'
+                    type='button'
                     disabled={disable}
                     onClick={handleStart}>
                     Начать тест
